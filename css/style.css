@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Cairo', sans-serif;
+    width:1,448px ;
+    height: auto;
+   background-color: #FFFFFF;
+   overflow-x: hidden;
+   direction: rtl;
+}
+.discount{
+    width:100%;
+    height: 124px;
+    padding:36px 10px 10px 10px;
+    gap: 10px;
+    background: linear-gradient(to right, #486341, #66B3c2);
+     direction: rtl;
+    color:white;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+.header{
+    background-color: #FFFFFF;
+    gap:545px;
+    height: 269.32px;  /*313*/
+    width: 100%;
+    padding-right: 20px;
+    gap:31px;
+    /* display: flex; */
+    /* margin-bottom: 20px; */
+}
+
+.container {
+  
+  /* flex-wrap: wrap; */
+display: flex; 
+justify-content: space-evenly;
+ align-items: center;
+  position: relative; /* mine */
+}
+
+
+.logo-section {
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 60px;
+  height: auto;
+}
+
+.logo-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #00657b;
+  margin: 0;
+}
+
+.logo-text p {
+  font-size: 12px;
+  color: #007b9c;
+  margin: 0;
+}
+
+.nav-links {
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #007b9c;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #007b9c;
+  border-radius: 2px;
+}
+
+.contact-section {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  width:160px;
+  min-height: 162.5px;
+  height: fit-content;
+  gap: 10px;
+}
+
+.phone {
+  border: 1px solid #333;
+  padding: 6px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  /* display: flex; */
+  /* align-items: center; */
+  gap: 8px;
+  
+}
+
+
+.phone:hover{
+   text-decoration: none;
+   background-color: #00657b;
+   color: white;
+}
+
+
+
+.phone i {
+  color: #007b9c;
+}
+
+.social {
+  /* display: flex; */
+  gap: 15px;
+}
+
+.social a {
+  color: #00657b;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #0099b7;
+}
+
+
+.icons-container{
+width: 284px;
+min-height: 162.5px;
+height: fit-content;
+gap: 50px;
+}
+.call{
+    /* display: flex; */
+    width:284px;
+    height: 72px;
+    border-radius: 16px;
+    border: 1px;
+    gap:17px;
+    border-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.description {
+  background-image: 
+    url('/images/water.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 681px;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+
+.content {
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px 20px;
+  backdrop-filter: blur(4px);
+}
+
+.content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #e6e6e6;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 23.38px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  border: none;
+  gap:18.77px;
+  height: 63.77px;
+  width:276.87px;
+}
+
+.btn.call {
+     background: linear-gradient(to right, #486341, #66B3c2);
+     color: black;
+
+}
+
+.btn.whatsapp {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+
+}
+
+.btn:hover {
+  opacity: 0.8;
+
+}
+
+
