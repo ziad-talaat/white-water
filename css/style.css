@@ -8,7 +8,8 @@
 
 body{
    font-family: 'Cairo', sans-serif;
-    width:1,448px ;
+    /* width:1,448px ; */
+    width: 100%;
     height: fit-content;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -35,25 +36,55 @@ body{
 
 .header{
     background-color: #FFFFFF;
-    gap:545px;
-    height: 269.32px;  
+    min-height: 761.18px;
+    height: fit-content;
     width: 100%;
     padding-right: 20px;
     gap:31px;
-  
+    display: flex;
+    align-items: center;
+    padding: 0 20px;    
 }
+
+@media (max-width:722px) {
+    .header{
+    background-color: #FFFFFF;
+    gap:545px;
+    min-height: 202.68px;
+    height: fit-content;
+    width: 100%;
+    padding-right: 20px;
+    gap:31px;
+}
+}
+  
 
 .container {
-  
-  /* flex-wrap: wrap; */
 display: flex; 
 justify-content: space-evenly;
- align-items: center;
-  position: relative; /* mine */
+ align-items:center;
+ align-content: space-evenly;
+ width: 100%;
+
 }
 
+
+.description-section p ,.vedios-section p{
+    direction: rtl;
+    padding-right: 70px; 
+      width:fit-content ;
+      min-height: 59;
+      font-family: 'cairo',sans-serif;
+      font-weight: bold;
+       font-size: 31.38px; 
+       line-height: 100%;
+        letter-spacing: 0%;
+        margin-left: auto;
+}
+
+
 .logo-parent{
-    width: 400px;
+    max-width: 400px;  
      min-height: 200px;
       display: flex; 
       flex-direction: column;
@@ -148,8 +179,6 @@ justify-content: space-evenly;
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  /* display: flex; */
-  /* align-items: center; */
   gap: 8px;
   
 }
@@ -192,7 +221,7 @@ height: fit-content;
 gap: 50px;
 }
 .call{
-    /* display: flex; */
+   
     width:284px;
     height: 72px;
     border-radius: 16px;
@@ -227,35 +256,47 @@ gap: 50px;
      margin: 0px 5px;
      
 }
+.vedio{
+    width:368.82px;
+    min-height: 281.84px;
+    height: fit-content;
+    border-radius: 25.19px;
+    padding:111.55px 136.73px 111.55px 136.73px;
+}
 
-.card img{
+
+.vedios-section{
+     min-height: 599.67px;
+     height: fit-content;
+  padding: 183.7px 72.32px 134px 72.32px;
+  gap:96px ;
+  background-color: #DAF2F3;
+  direction: ltr;
+
+
+
+}
+
+
+.card img ,.vedios-sec img{
     border-radius:29.4px ;
      width:348.95px;
      height: 232.63px;
      position:relative;
      right:12px;
 }
-.card h5{
-    direction: rtl;
-     width:348.95;
-     height: 68px;
-      font-family: 'cairo' sans-serif;
-       font-weight: 700;
-         font-size: 18.4px;
-         line-height-step: 0%;
-         text-align: center;
-         color:#1B667B"
-}
 
 .card p{
     direction: rtl;
-     font-family: 'cairo' sans-serif;
+     font-family: 'cairo', sans-serif;
       font-weight: 500;
        font-size: 14.72px;
        line-height: 100%;
        letter-spacing: 0%;
        text-align: center; 
-       color:#656363
+       color:#656363;
+       
+    
 }
 
 
@@ -290,6 +331,8 @@ gap: 50px;
   padding: 30px 20px;
   backdrop-filter: blur(4px);
 }
+
+
 
 .content h1 {
   font-size: 28px;
@@ -346,11 +389,4 @@ gap: 50px;
 .btn:hover {
   opacity: 0.8;
 
-}
-
-
-
-
-@media (max-width:767px){
-   
 }
