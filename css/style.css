@@ -7,6 +7,14 @@
 
 
 
+html,body{
+   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth; 
 }
@@ -43,7 +51,8 @@ body{
 
 .header{
     background-color: #FFFFFF;
-    height: 202.68px;
+    min-height: 202.68px;
+    height: fit-content;
     width: auto;
     padding-right: 20px;
     /* gap:31px; */
@@ -74,9 +83,6 @@ display: flex;
 
 }
 
-.vedios-sec{
-  margin-bottom: 25px;
-}
 
 
 .description-section p {
@@ -93,7 +99,7 @@ display: flex;
 }
 .description-section .title {
   direction: rtl;
-    padding-right: 70px; 
+    padding-right: 70px;   
       width:fit-content ;
       min-height: 59px;
       font-family: 'cairo',sans-serif;
@@ -101,12 +107,12 @@ display: flex;
        font-size: 31.38px; 
        line-height: 100%;
         letter-spacing: 0%;
-        margin-left: auto;
+         margin-left: auto;  
 }
 
 .vedios-section .title{
   direction: rtl;
-    padding-right: 70px; 
+     padding-right: 70px;  
       width:100% ;
       min-height: 59px;
       font-family: 'cairo',sans-serif;
@@ -114,7 +120,7 @@ display: flex;
        font-size: 31.38px; 
        line-height: 100%;
         letter-spacing: 0%;
-        margin-left: auto;
+         margin-left: auto; 
         text-align: center;
 }
 
@@ -122,6 +128,7 @@ display: flex;
 .logo-parent{
     max-width: 400px;  
      min-height: 200px;
+    
       display: flex; 
       flex-direction: column;
        align-items: center;
@@ -134,7 +141,7 @@ display: flex;
 }
 
 .logo-section img {
-  width: 50px;
+  width: 95px;
   height: auto;
 }
 
@@ -347,7 +354,7 @@ gap: 50px;
     padding:111.55px 136.73px 111.55px 136.73px;
 } */
 
-
+/* 
 .vedios-section{
      min-height: 599.67px;
      height: fit-content;
@@ -362,7 +369,38 @@ gap: 50px;
 
 
 
+
+
+} */
+
+
+
+
+.vedios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ centers horizontally */
+  gap: 20px; /* space between videos */
 }
+
+.vedios-sec {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.vedios-sec img,
+.vedios-sec video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures consistent size */
+  border-radius: 12px;
+}
+
+
 
 .play{
 cursor: pointer;
@@ -524,7 +562,7 @@ display: none;
   width:100%;
   min-height: 685px;
   height: 800px;
-  padding: 92px 65px 92px 65px;
+  padding: 92px 65px 92px 65px;       
   background: linear-gradient(#B4DBD4,#316158);
 
 
@@ -551,7 +589,7 @@ display: none;
   width:100%;
   min-height: 685px;
   height: fit-content;
-  padding: 92px 65px 92px 65px;
+   padding: 92px 65px 92px 65px;       
   background: linear-gradient(#B4DBD4,#316158);
 
 
@@ -582,7 +620,7 @@ display: none;
 .white-space{
    width: 100vw;
    height: 126px;
-   padding: 33px 114px;
+    padding: 33px 114px;  
    gap:12px;
 }
 
