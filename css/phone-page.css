@@ -1,0 +1,32 @@
+.logo{
+    width:390.32px;
+    height: 369.32px;
+    position: relative;
+    top:59px;
+    left: 600px;
+}
+
+.exit{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top:200px;
+    left: 100px;
+    color: #164A54;
+}
+
+.links{
+    position: relative;
+    top:59px;
+    left: 600px;
+}
+
+.link{
+    color: #000;
+    display: block;
+    margin-bottom: 30px;
+    font-family: 'cairo',sans-serif;
+    font-weight:bolder
+}
+
+

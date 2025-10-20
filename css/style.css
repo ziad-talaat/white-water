@@ -23,7 +23,7 @@ html {
 
 body{
    font-family: 'Cairo', sans-serif;
-    /* width:1,448px ; */
+   
    
     height: fit-content;
     overflow-y: scroll;
@@ -55,24 +55,11 @@ body{
     height: fit-content;
     width: auto;
     padding-right: 20px;
-    /* gap:31px; */
     display: flex;
     align-items: center;
     padding: 0 20px;   
     justify-content: space-between; 
 }
-/* 
-@media (max-width:722px) {
-    .header{
-    background-color: #FFFFFF;
-    gap:545px;
-    min-height: 202.68px;
-    height: fit-content;
-    width: 100%;
-    padding-right: 20px;
-    gap:31px;
-}
-} */
   
 
 .container {
@@ -336,7 +323,7 @@ gap: 50px;
 
 
 .card{
-    width:377.83px ; /*400.83px*/
+    width:377.83px ; 
     height: fit-content;
     min-height: 445.18px;
     border-radius: 29.4px;
@@ -346,41 +333,12 @@ gap: 50px;
      margin: 0px 5px;
      
 }
-/* .vedio{
-    width:368.82px;
-    min-height: 281.84px;
-    height: fit-content;
-    border-radius: 25.19px;
-    padding:111.55px 136.73px 111.55px 136.73px;
-} */
-
-/* 
-.vedios-section{
-     min-height: 599.67px;
-     height: fit-content;
-  padding: 183.7px 72.32px 134px 72.32px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #DAF2F3;
-  direction: ltr;
-    justify-content: space-evenly;
-  align-items: center;
-  align-content: space-evenly;
-
-
-
-
-
-} */
-
-
-
 
 .vedios-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* ✅ centers horizontally */
-  gap: 20px; /* space between videos */
+  justify-content: center; 
+  gap: 20px;
 }
 
 .vedios-sec {
@@ -396,7 +354,7 @@ gap: 50px;
 .vedios-sec video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ensures consistent size */
+  object-fit: cover;
   border-radius: 12px;
 }
 
@@ -449,6 +407,18 @@ display: none;
    text-align: center ;
     line-height: 30px !important; 
 }
+
+.sp-icone{
+    width:30px ;
+  height: 30px ;
+  background-color: #1A7182 ;
+ 
+  border-radius: 50% ;
+  color:white ;
+   text-align: center ;
+    line-height: 30px !important; 
+}
+
 
 .icone-styling:hover{
   background-color:  #007b9c;
@@ -541,21 +511,6 @@ display: none;
   opacity: 0.8;
 
 }
-/* 
-#who-we-are{
-  direction: ltr;
-  width:100%;
-  min-height: 685px;
-  height: 800px;
-  padding: 92px 65px 92px 65px;
-  background: linear-gradient(#B4DBD4,#316158);
-}
-
-@media (max-width:722px) {
-.who-we-are-Image{
-  border-radius: 29.4px;
-    width: 348.95px;
-    /* height: 232.63px; */
 
     #who-we-are {
  direction: ltr;
@@ -568,8 +523,7 @@ display: none;
 
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between;
-  align-items: center; */
+ 
   
 }
 
@@ -602,11 +556,11 @@ display: none;
 
   .who-we-are-Image {
     display: flex;
-    justify-content: center; /* ensures image is centered */
+    justify-content: center; 
   }
 
   .who-we-are-Image img {
-    max-width: 90%; /* optional: keep some margin on sides */
+    max-width: 90%; 
   }
 }
 
@@ -656,11 +610,6 @@ border-radius: 15px;
     justify-content: space-between; 
 }
 }
-
-
-
-
-
 
 .feedback-card {
   background-color: #fff;
@@ -754,4 +703,112 @@ border-radius: 15px;
 ::-webkit-scrollbar {
   display: none;
 }
+
+#call-icone{
+  display:none;
+  color: white;
+}
+
+.slash{
+  display: none;
+}
+.trans-me{
+  transform: translateY(0px);
+
+}
+.trans-me:hover{
+  transform: translateY(-3px);
+   transition: transform 0.4s ease-in-out;
+}
+
+ 
+@media (max-width:490px) {
+
+  .header{
+    background-color: #FFFFFF;
+    min-height: 202.68px;
+    height: fit-content;
+    width: 100%;
+   
+}
+
+
+
+.container {
+display: auto; 
+
+ width: 100%;
+}
+
+
+#call-icone{
+  display:block;
+  width:50px ;
+  height: 50px ;
+  background-color: #1A7182 ;
+ 
+  border-radius: 50% ;
+  color:white ;
+   text-align: center ;
+    line-height: 50px !important; 
+    justify-self: left;
+    
+
+     transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+#call-icone:hover{
+  transform: translateY(-3px);
+
+}
+
+
+.slash-image{
+  width:35px;
+  height: 35px;
+
+}
+
+
+.logo-parent{
+  display: flex;
+  flex-direction: row;
+ width: 100%;
+  direction: ltr;
+}
+
+.slash{
+display: block;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+.slash-image:hover{
+  transform: translateY(-3px);
+
+}
+
+
+#image{
+  position: relative;
+  left: 30px;
+}
+
+.logo-section{
+display: flex;
+width:100vw;
+height: 200px;
+margin:0 auto;
+justify-content: center;
+align-items: center;
+direction: rtl;
+}
+ 
+
+ .contact-section{
+  display: none;
+}
+.nav-links{
+  display: none;
+}
+} 
 
