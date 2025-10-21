@@ -12,6 +12,7 @@ html,body{
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html {
@@ -83,22 +84,10 @@ display: flex;
         letter-spacing: 0%;
         margin-left: auto;
 }
-.description-section .title {
-  direction: rtl;
-    padding-right: 70px;   
-      width:fit-content ;
-      min-height: 59px;
-      font-family: 'cairo',sans-serif;
-      font-weight: bold;
-       font-size: 31.38px; 
-       line-height: 100%;
-        letter-spacing: 0%;
-         margin-left: auto;  
-}
 
-.vedios-section .title{
+.vedios-section .title , .description-section .title{
   direction: rtl;
-     padding-right: 70px;  
+
       width:100% ;
       min-height: 59px;
       font-family: 'cairo',sans-serif;
