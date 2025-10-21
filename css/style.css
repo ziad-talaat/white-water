@@ -448,7 +448,7 @@ display: none;
 
 .description {
   background-image: 
-    url('/images/water.jpg'); 
+    url('/white-water/images/water.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -598,7 +598,7 @@ display: none;
 }
 
 .rank{
-  background-image: url('/images/rank.jpg');
+  background-image: url('/white-water/images/rank.jpg');
   width:100%;
   min-height: 408px;
   height: fit-content;
