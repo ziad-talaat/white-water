@@ -341,7 +341,7 @@ gap: 50px;
     min-height: 445.18px;
     border-radius: 29.4px;
      padding:32px 25.94px 32px 25.94px;
-     gap:12.28px;
+     gap:15.28px;
      background: linear-gradient(#FFFFFF,#CFE3E4);
      margin: 0px 5px;
      
@@ -405,9 +405,8 @@ display: none;
     direction: rtl;
      font-family: 'cairo', sans-serif;
       font-weight: 500;
-       font-size: 14.72px;
+       font-size: 20.72px;
        line-height: 100%;
-       letter-spacing: 0%;
        text-align: center; 
        color:#656363;
        
@@ -448,7 +447,7 @@ display: none;
 
 .description {
   background-image: 
-    url('/white-water/images/water.jpg'); 
+    url('/images/water.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -830,3 +829,6 @@ direction: rtl;
   display: none;
 }
 } 
+
+
+
