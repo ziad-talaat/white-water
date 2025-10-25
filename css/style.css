@@ -406,7 +406,8 @@ display: none;
      font-family: 'cairo', sans-serif;
       font-weight: 500;
        font-size: 20.72px;
-       line-height: 100%;
+       line-height: 1.2;
+        letter-spacing: 0%;
        text-align: center; 
        color:#656363;
        
