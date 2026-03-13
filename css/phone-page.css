@@ -3,8 +3,8 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-   overflow-y: hidden;
-    height: 100rem;
+   
+    height: 100vh;
 }
 
 
@@ -101,3 +101,151 @@ body{
 .nav-links a:hover {
   color: #007b9c;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-big{
+  font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 22.79px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(0, 51, 102, 1);
+position: absolute;
+left: 20px;
+ top:100px
+}
+
+ul.ulneew a {
+  text-decoration: none;
+  color: black;
+}
+
+.ulneew a:hover{
+  text-decoration: underline;
+  color:black;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.nav-container {
+    background: white;
+    border-radius: 12px;
+    padding: 8px 0;
+    width: fit-content;
+    direction: ltr;
+  }
+
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 14px 20px;
+    color: #0f172a;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+  }
+  .nav-item:hover {
+    background: rgba(255,255,255,0.07);
+    text-decoration: underline;
+  }
+  .nav-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+      color: #0f172a;
+  }
+
+
+  .new-socialPhone{
+    width:fit-content;
+    margin: 30px auto;
+  }
+  .icone-styling-new{
+     border: 0.58px solid rgba(0, 51, 102, 0.33);
+width: 33.582969665527344;
+height: 33.55609893798828;
+gap: 5.79px;
+
+opacity: 1;
+border-radius: 5.79px;
+border-width: 0.58px;
+padding: 8.34px;
+
+
+  }
+
+  .new-socialPhone a{
+    margin-right: 5px; color:rgba(2, 45, 88, 1);
+  }
+
+
+
+     
+  
+  .footer-contact-item {
+    background-color: rgba(2, 45, 88, 1); 
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.6;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+ 
+  .footer-contact-icon {
+    
+    font-size: 16px;
+    margin-top: 1px;
+    
+  }
+
+  .footer-contact-item a{
+ color:white;
+  text-decoration: none;
+}
+.footer-contact-item a:hover{
+   color: #38bdf8;;
+}
+      
+      
+      

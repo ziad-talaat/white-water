@@ -890,7 +890,7 @@ height: fit-content;
 
   #small{
             display: flex;
-        width: 1000%;
+        width: 100%;
         height: fit-content;
         min-height: 219px;
         align-items: center;
@@ -963,7 +963,7 @@ height: fit-content;
 
 
 .container {
-display: auto; 
+display: flex; 
 
  width: 100%;
 }
