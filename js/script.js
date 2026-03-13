@@ -54,3 +54,9 @@ videosSection.addEventListener('click', (e) => {
   }
 });
 
+
+
+function toggleMenu() {
+    const menu = document.getElementById('navbar-mobile');
+    menu.classList.toggle('open');
+  }

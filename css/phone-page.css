@@ -51,13 +51,13 @@ body{
 
 
 .social a ,.new-social a{
-  color: #00657b;
+ color: rgba(0, 51, 102, 0.88);
   font-size: 20px;
   transition: 0.3s;
 }
 
 .social a:hover  ,.new-social a:hover{
-  color: #0099b7;
+  color: rgba(0, 51, 102, 0.88);
 }
 
 

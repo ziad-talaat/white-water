@@ -13,55 +13,55 @@
 </head>
 <body >
    
-   <div class="container">
-
-    <!-- Call (Left) -->
-    <div class="contact-section">
-      <a id="call-number" href="tel:0548003079" class="new-phone">
-      اتصل الان <img style="height: 20px; width:20px" src="images/phone-call-white-icon.png">
-      </a>
-    </div>
-     
-    
-    <div id="small">
-    
-      
-      
-          <div  class="phone-icon">
-            <a href="tel:0548003079">
-              <i class="fa-solid fa-phone"></i>
-            </a>
-          </div>
-
-          <div class="omage">
-            <img id="image" class="logo-image-shake" src="images/logo.png" alt="White Water Logo">
-          </div>
-          <div id="slashs">
-            <a class="slash trans-me" style="margin-left: 35px;" href="phone-links.html" ><img class="slash-image slash"  src="images/menu.png"></a>
-          </div>
-    </div>
-
-
-    <!-- Navigation (Center) -->
-    <nav class="nav-links">
-      <a href="#who-we-are"> لماذا الامتياز</a>
-      <a href="#who-we-are"> تغطيتنا</a>
-      <a href="#who-we-are">من نحن</a>
-      <a href="#services">خدمتنا</a>
-      <a href="#main" class="active">الرئيسية</a>
-    </nav>
-
-    <!-- Logo (Right) -->
-    <div class="logo-section">
-      <div style="position: relative;left: 30px; top:15px"  class="logo-text">
-        <h3 >الامتياز</h3>
-      </div>
-      <img id="image" class="logo-image-shake" src="images/logo.png" alt="White Water Logo">
-    </div>
-
-  </div> 
-     
   
+<nav class="navbar">
+  <!-- Brand -->
+ <div style="display:flex; align-items:center; gap:14px;">
+    <a href="tel:+966545501061" class="navbar-cta desktop">
+      <i class="fa-solid fa-phone"></i>
+      اتصل الآن
+    </a>
+    <button class="navbar-hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+ 
+  <!-- Links -->
+  <ul class="navbar-linkss">
+    <li><a href="#">الرئيسية</a></li>
+    <li><a href="#">خدماتنا</a></li>
+    <li><a href="#">من نحن</a></li>
+    <li><a href="#">تغطيتنا</a></li>
+    <li><a href="#">لماذا الامتياز</a></li>
+  </ul>
+ 
+  <!-- CTA + Hamburger -->
+  
+
+   <a class="navbar-brand" href="#">
+    <span class="navbar-brand-name">الامتياز</span>
+    <div class="">
+      <img src="images/logo.png" style="width: 150px; height: 150px;" >
+    </div>
+  </a>
+</nav>
+ 
+<!-- Mobile Menu -->
+<div class="navbar-mobile" id="navbar-mobile">
+  <a href="#">الرئيسية</a>
+  <a href="#">خدماتنا</a>
+  <a href="#">من نحن</a>
+  <a href="#">تغطيتنا</a>
+  <a href="#">لماذا الامتياز</a>
+  <a href="tel:+966545501061" class="navbar-cta">
+    <i class="fa-solid fa-phone"></i>
+    اتصل الآن
+  </a>
+</div>
+ 
+
     
 
 
@@ -205,49 +205,6 @@
 
  </div>
 </div> 
-
-
-
-
-  
-<!-- 
-  <section id="services" class="row description-section" >
-
-    <div class="col-12" style="position: relative; ">
-    
-      <p  class="title">خدمات وايت مياه في جدة</p>
-    </div>
-    
-    <div class="card">
-      <img  src="images/red-car.jpg" alt="truck">
-      <h5 style="text-align: center;">وجود سجل تجاري و فاتورة توصيل
-        المياه للمطاعم</h5>
-        <p style="text-align: center;">نوفر توصيل المياه للمطاعم و المنشأت
-          التجارية بخدمة موثوقة و مرخصة رسميا</p>
-    </div>
-
-    
-    
-    
-    <div class="card" >
-      <img src="images/call-center.jpg" alt="truck" >
-    <h5 style="text-align: center;">المتابعة مع العميل بعد الخدمة</h5>
- <p style="text-align: center;">نهتم براحتك بعد التوصيل و نتأكد من رضاك
- الكامل عن الخدمة و جودة المياه في كل طلب</p>
-    </div>
-    
-
-
-    
-    
-    <div class="card">
-        <img src="images/car5.jpg" alt="truck" >
-    <h5 style="text-align: center;">مواتير رفع قوية و خراطيم طويلة</h5>
- <p style="text-align: center;" >نوفر مواتير رفع عالية الكفاءة مزودة بخراطيم طويلة 
-لتلبية احتياجات المواقع البعيدة و المرتفعة بسهولة</p>
-    </div>
-  </section>  -->
-
 
    
   <section id="vedios" class="row vedios-section">
@@ -563,76 +520,85 @@
 
 
 
+<footer class="footer">
+  <div class="footer-main">
+ 
+    <!-- Brand -->
+   
+
+     <div class="contact">
+      <div class="footer-col-title">تواصل معنا</div>
+      <ul class="footer-contact-list">
+        <li class="footer-contact-item">
+            <a  href="tel:+966545501061" >+966545501061</a>
+          <span class="footer-contact-icon">📞</span>
+        </li>
+        <li class="footer-contact-item">
+          <span>جدة، المملكة العربية السعودية</span>
+          <span class="footer-contact-icon">📍</span>
+        </li>
+      </ul>
+    </div>
+ 
+    <!-- Quick Links -->
+    <div class="quick-links">
+      <div class="footer-col-title">روابط سريعة</div>
+      <ul class="footer-col-list">
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">خدماتنا</a></li>
+        <li><a href="#">من نحن</a></li>
+        <li><a href="#">تغطيتنا</a></li>
+        <li><a href="#">لماذا الامتياز</a></li>
+      </ul>
+    </div>
 
 
-<section class="last-section" style="display: flex; flex-direction: column;
-align-items: center;
-justify-content: space-around;
- width:100%;height: 1061px; padding: 64px 35px 35px 35px;
-  gap:10px ;background-color:#C8C8C8">
-  
-  <div>
-
-    <div class="opinions-section" >
-      <div class="logo-text" >
-        <h3>وايت مياه الفتح</h3>
-        <p>White Water El-Fath</p>
+   
+ 
+    <!-- Coverage Areas -->
+    <div class="coverage">
+      <div class="footer-col-title">مناطق التغطية</div>
+      <ul class="footer-col-list">
+        <li><span>الفيصلية</span></li>
+        <li><span>المروة</span></li>
+        <li><span>العزيزية</span></li>
+        <li><span>السلامة</span></li>
+        <li><span>البوادي</span></li>
+      </ul>
+    </div>
+ 
+    
+    <div id="go-mid" style="display: flex; height:150px ; flex-direction: column; flex-flow: column-reverse; justify-content: space-between;">
+       <div  class="logo-section">
+      <div style="position: relative;left: 50px; top:30px"  class="logo-text">
+        <h3 style="color:white">الامتياز</h3>
       </div>
-      <img class="logo-image-shake" src="images/logo.png" alt="White Water Logo">
+      <img style="height:100px;width: 100px;" src="images/logo.png" alt="White Water Logo">
     </div>
-    
-    <div   class="new-social">
-      <a  href="https://vm.tiktok.com/ZSHvdnbhyG7Bm-n3GKd/" target="_blank"><i class="trans-me icone-styling fa-brands fa-tiktok"></i></a>
-      <a href="https://www.facebook.com/share/17FYhrY7Lf/" target="_blank"><i class="trans-me icone-styling fa-brands fa-facebook"></i></a>
-      <a  href="https://wa.me/+966548003079" target="_blank"><i class="trans-me icone-styling fa-brands fa-whatsapp"></i></a>
-      <a href="https://www.instagram.com/omarallpoop?igsh=MW1peWRuZDY2Mnc3YQ==" target="_blank"><i class="trans-me icone-styling fa-brands fa-instagram"></i></a>
+       
+
+ <div class="footer-socials">
+       <a style="margin-right: 5px;" href="https://vm.tiktok.com/ZSHvdnbhyG7Bm-n3GKd/" target="_blank"><i class=" icone-styling fa-brands fa-tiktok"></i></a>
+      <a style="margin-right: 5px;" href="https://www.facebook.com/share/17FYhrY7Lf/" target="_blank"><i class=" icone-styling fa-brands fa-facebook"></i></a>
+      <a style="margin-right: 5px;" href="https://www.instagram.com/omarallpoop?igsh=MW1peWRuZDY2Mnc3YQ==" target="_blank"><i class=" icone-styling fa-brands fa-instagram"></i></a>
+      <a style="margin-right: 5px;" href="https://www.instagram.com/omarallpoop?igsh=MW1peWRuZDY2Mnc3YQ==" target="_blank"><i class=" icone-styling fa-brands fa-whatsapp"></i></a>
+      </div>
+
     </div>
-
+ 
   </div>
-
-        <div style="width: 100%;  display: flex; justify-content: space-evenly;">
-          <div>
-
-            <ul>
-              <li style="margin-bottom: 15px;"> <a style="direction: rtl; text-align: right; font-family: 'cairo',sans-serif; font-weight: 600; font-size:17.47px; line-height: 100%; color: #252525;" href="#main">الرئيسية</a></li>
-              <li style="margin-bottom: 15px;"><a style="direction: rtl; text-align: right; font-family: 'cairo',sans-serif; font-weight: 600; font-size:17.47px; line-height: 100%; color: #252525;" href="#services" >خدماتنا</a></li>
-            </ul>
-            </div>
-
-            
-    
-
-            
-            <div>
-              <ul>
-               <li style="margin-bottom: 15px;"><a style="direction: rtl; text-align: right; font-family: 'cairo',sans-serif; font-weight: 600; font-size:17.47px; line-height: 100%; color: #252525;" href="#who-we-are" >من نحن</a></li>
-               <li style="margin-bottom: 15px;"> <a style="direction: rtl; text-align: right; font-family: 'cairo',sans-serif; font-weight: 600; font-size:17.47px; line-height: 100%; color: #252525;" href="#opinions">اراء عملاءنا</a></li>
-               <li style="margin-bottom: 15px;"><a  style="direction: rtl; text-align: right; font-family: 'cairo',sans-serif; font-weight: 600; font-size:17.47px; line-height: 100%; color: #252525;" href="#vedios">فيديوهات خدماتنا</a> </li>
-             </ul>
-            </div>
-          </div>
-<div style="width: 244.61px; height: 150.77px; display: flex; flex-direction: column;align-items: center; 
-  justify-content: center; ">
-  <img src="images/vision.png" style="width: 100%; height: 100%;" alt="vision image"> 
-
-  <p style="direction: rtl; font-family: 'cairo',sans-serif;font-weight: 600;font-size: 27.92; line-height: 100%; align-items: center;width: 100vw;             
-    text-align: center;       
-    white-space: normal;       
-    word-break: break-word;">جميع الحقوق محفوظة 2024 - وايت مياه الفتح - جدة</p>
-</div>
-
-
-<div style="display: flex; flex-direction: column; justify-content: space-evenly; height:140px ;width: 100%;align-items: center">
-  <p style="direction: rtl; font-family: 'cairo',sans-serif;font-weight: 600;font-size: 27.92; line-height: 100%; ">تواصل معنا</p>
-  <div  >
-         <a href="tel:+966548003079"  class="new-phone">
-           966548003079+ <i class="fa-solid fa-phone-volume"></i>
-         </a>
+ 
+  <div class="footer-divider"></div>
+ 
+  <div class="footer-vision">
+    <img src="images/vision.png" alt="saudi vesion">
   </div>
-</div>
+ 
+  <div class="footer-divider"></div>
+ 
+  <div class="footer-copyright">© 2026 الامتياز . جميع الحقوق محفوظة</div>
+</footer>
 
-
-</section>
 
 
 
