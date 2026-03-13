@@ -28,7 +28,7 @@ body{
     scroll-behavior: smooth;
    background-color: #FFFFFF;
    overflow-x: hidden;
-   direction: rtl;
+  
 }
 
 
@@ -52,7 +52,7 @@ body{
 .header{
     background-color: #FFFFFF;
     min-height: 202.68px;
-    height: fit-content;
+    height: 110px;
     width: auto;
     padding-right: 20px;
     display: flex;
@@ -62,12 +62,16 @@ body{
 }
   
 
-.container {
-display: flex; 
- align-items:center;
- justify-content: space-around;
- width: 100%;
+#small{
+  display: none;
+}
 
+.container {
+display:flex;
+height: fit-content;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
 }
 
 
@@ -135,9 +139,10 @@ display: flex;
         text-align: center;
 }
 .logo-section {
-  gap: 10px;
-  display: inline-block; 
-  text-align: center;
+    order:3;
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
 
 .logo-section img {
@@ -184,11 +189,11 @@ gap: 10px;
 }
 
 .nav-links {
-  gap: 25px;
-  margin-top: 20px;
-   display: flex;
-    gap: 15px; 
-    justify-content: center;
+ order:2;
+  display:flex;
+  gap:25px;
+  justify-content:center;
+  flex:1;
 }
 
 .nav-links a {
@@ -216,14 +221,18 @@ gap: 10px;
 }
 
 .contact-section {
-  width:160px;
-  min-height: 162.5px;
-  height: fit-content;
-  gap: 10px;
-  display: flex;
-   flex-direction: column; 
-   align-content: space-between; 
-   justify-content: space-evenly;
+  font-family: 'Inter', sans-serif;
+    font-weight: 500;       
+    font-style: normal;     
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color:  rgba(23, 38, 74, 1);
+    padding: 5px;
+;
 }
 
 .phone {
@@ -238,20 +247,17 @@ gap: 10px;
 }
 
 .new-phone{
-   border: 1px solid  #1A7182;
-   color:  #1A7182;
-  padding: 6px 5px;
-  border-radius: 8px;
+  color:rgba(255,255,255,1);
   text-decoration: none;
-  font-weight: 600;
-  gap: 8px;
-  
+
+
 }
+
 
 
 .phone:hover ,.new-phone:hover{
    text-decoration: none;
-   background-color: #00657b;
+  
    opacity: 0.7;
    color: white;
 }
@@ -291,15 +297,7 @@ min-height: 162.5px;
 height: fit-content;
 gap: 50px;
 }
-.call{
-   
-    width:284px;
-    height: 72px;
-    border-radius: 16px;
-    border: 1px;
-    gap:17px;
-    border-color: #000000;
-}
+
 
 
 
@@ -448,15 +446,16 @@ display: none;
 
 .description {
   background-image: 
-    url('/images/water.jpg'); 
+    url('/images/firstCar.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 681px;
-  height: fit-content;
-
+  height: 1024px;
+justify-content: flex-start;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
   align-items: center;
   text-align: center;
   color: white;
@@ -464,33 +463,48 @@ display: none;
 }
 
 
+.buttons-row {
+  display: flex;
+  flex-direction: row; /* horizontal */
+  gap: 10px;           /* space between buttons */
+  justify-content: center; /* center on screen */
+  flex-wrap: wrap;     /* allows wrap on very small screens */
+}
+
+.buttons-row .btn {
+  flex: 1 1 auto;       /* optional: make buttons equal width */
+  max-width: 200px;     /* optional max width */
+}
+
 .content {
   max-width: 600px;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
   border-radius: 10px;
   padding: 30px 20px;
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
 }
 
 
 
-.content h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.description h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 51.67px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
 }
 
-.content h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
+.description h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;        /* Medium weight */
+  font-size: 29.76px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
 }
 
-.content p {
-  font-size: 16px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-  color: #e6e6e6;
-}
+
 
 
 .buttons {
@@ -503,26 +517,51 @@ display: none;
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 23.38px;
+  border-radius: 13px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
   border: none;
   gap:18.77px;
-  height: 63.77px;
-  width:276.87px;
+ 
+  width:260;
+  margin: 15px;
+}
+
+.call img{
+  height: 20px;
+  width: 20px;
 }
 
 .btn.call {
-     background: linear-gradient(to right, #486341, #66B3c2);
-     color: black;
+    color: white;
 
+  background: rgba(255,255,255,0.05);
+  border: 0.5px solid;
+  border-image-source: linear-gradient(
+    267.27deg,
+    rgba(255,255,255,0.05) 0.44%,
+    #FFFFFF 50.07%,
+    rgba(255,255,255,0.05) 99.7%
+  );
+  border-image-slice: 1;
+
+  backdrop-filter: blur(53px);
+
+  box-shadow:
+    inset 0px 2px 4px rgba(255,255,255,0.4),
+    inset 0px -2px 4px rgba(0,0,0,0.2);
+}
+.call{
+     width: 217px;
+    height: 48px;
 }
 
 .btn.whatsapp {
-  background-color: white;
-  color: black;
-  border: 1px solid white;
+ color:white;
+  background-color: rgba(23, 38, 74, 1);
+
+  
 
 }
 
@@ -531,20 +570,7 @@ display: none;
 
 }
 
-    #who-we-are {
- direction: ltr;
-  width:100%;
-  min-height: 685px;
-  height: 800px;
-  padding: 92px 65px 92px 65px;       
-  background: linear-gradient(#B4DBD4,#316158);
-
-
-  display: flex;
-  flex-wrap: wrap;
- 
   
-}
 
 .who-we-are-Image img {
   width: 100%;
@@ -629,6 +655,12 @@ border-radius: 15px;
     justify-content: space-between; 
 }
 }
+
+
+.omage{
+  display: none;
+}
+
 
 .feedback-card {
   background-color: #fff;
@@ -724,13 +756,27 @@ border-radius: 15px;
 }
 
 #call-icone{
+
   display:none;
   color: white;
 }
 
-.slash{
+#slashs{
   display: none;
 }
+
+.phone-icon{
+  width:45px;
+  height:45px;
+  background-color:rgba(0, 51, 102, 1);
+  border-radius:50%;
+  align-items:center;
+  justify-content:center;
+  display: none;
+}
+
+
+
 .trans-me{
   transform: translateY(0px);
 
@@ -750,6 +796,156 @@ border-radius: 15px;
     width: 100%;
    
 }
+
+@media(max-width:769px){
+  .container{
+   
+  width:100%;
+  }
+
+  #small{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    position: relative;
+height: fit-content;
+  align-items:center;
+  justify-content:space-between; 
+
+  }
+
+   .nav-links{
+    display: none;
+  }
+
+  .contact-section{
+    display: none;
+  }
+ 
+
+  #slashs{
+    display: block;
+    position: absolute;
+    right: -220px;
+  }
+
+  
+
+ .phone-icon{
+  width:60px;
+  height:60px;
+  background-color:rgba(0, 51, 102, 1);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position: absolute;
+   top:37px;
+ 
+}
+
+.phone-icon a{
+  color:white;
+  font-size:25px;
+} 
+ 
+.logo-text{
+  display: none;
+}
+.logo-image-shake{
+  display: none;
+}
+
+.omage{
+  display: block;
+  width: fit-content;
+  position: relative;
+  right:-75px;
+}
+.omage #image{
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+}
+
+@media(max-width:390px){
+  .container{
+   
+  width:100%;
+  }
+
+  #small{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    position: relative;
+height: fit-content;
+  align-items:center;
+  justify-content:space-between; 
+
+  }
+
+   .nav-links{
+    display: none;
+  }
+
+  .contact-section{
+    display: none;
+  }
+ 
+
+  #slashs{
+    display: block;
+    position: absolute;
+    right: -160px;
+  }
+
+  
+
+ .phone-icon{
+  width:60px;
+  height:60px;
+  background-color:rgba(0, 51, 102, 1);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position: absolute;
+   top:37px;
+ 
+}
+
+.phone-icon a{
+  color:white;
+  font-size:25px;
+} 
+ 
+.logo-text{
+  display: none;
+}
+.logo-image-shake{
+  display: none;
+}
+
+.omage{
+  display: block;
+  width: fit-content;
+  position: relative;
+  right:-55px;
+}
+.omage #image{
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+}
+
+
+
+
+
+
 
 
 
@@ -783,8 +979,8 @@ display: auto;
 
 
 .slash-image{
-  width:35px;
-  height: 35px;
+  width:50px;
+  height: 50px;
 
 }
 
@@ -833,3 +1029,166 @@ direction: rtl;
 
 
 
+
+.serveTitle{
+  padding: 50px;
+  text-align: center;
+  font-family: Inter;
+font-weight: 600;
+font-style: Semi Bold;
+font-size: 39px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(0, 51, 102, 1);
+}
+
+.new-section{
+width: 100%;
+height: fit-content;
+}
+
+.row-image{
+  width:313px;
+  height:241px; 
+border-radius: 21px;
+}
+
+
+.new-service-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.new-service-row-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.new-row-text{
+   font-family: Inter;
+    font-weight: 600;
+    font-style: normal; /* CSS doesn’t support 'Semi Bold' in font-style, use font-weight */
+    font-size: 31.66px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgba(21, 35, 68, 1);
+    
+}
+
+.new-row-inner{
+   font-family: Inter;
+    font-weight: 400;
+    font-style: normal; /* CSS doesn’t support 'Regular' in font-style, use font-weight */
+    font-size: 25.33px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: rgba(123, 122, 122, 1);
+     word-break: normal; 
+
+}
+
+.words{
+  max-width: 50%;
+  direction: rtl;
+}
+
+
+
+.img-container{
+  max-width: 50%;
+}
+
+.circular-button {
+  width: 70px;
+  height: 70px;
+  padding: 17.15px; /* optional, content padding inside */
+  gap: 17.15px; /* only works in flex/grid containers */
+  border-radius: 54.5px; /* makes it round */
+  background: linear-gradient(180deg, #22335C 0%, #054A8F 100%);
+  opacity: 1;
+  display: flex; /* if you want to center content inside */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* makes it clickable */
+  margin-bottom: 10px;
+}
+.drop{
+  width: 23.327831268310547;
+height: 29.159788131713867;
+opacity: 1;
+
+}
+
+@media (max-width:770px) {
+  .new-service-row,.new-service-row-reverse{
+     flex-direction: column;
+
+  }
+}
+
+
+.whoWe{
+   font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Semi Bold is handled via weight */
+    font-style: normal; /* CSS doesn't support 'Semi Bold' in font-style */
+    font-size: 35.75px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: white;
+}
+
+.inline-Who{
+display: flex; 
+flex-wrap: wrap;
+direction: ltr;
+  min-height: 685px;
+  height: fit-content;
+  width: auto;
+  padding: 92px 65px 92px 65px;
+  background-color: rgba(15, 23, 42, 1);
+
+}
+
+.who-we-image{
+  display: block;
+   width: 557px;          
+    height: 498px;        
+   
+    border-radius: 30px;  
+    opacity: 1;           
+    transform: rotate(0deg); 
+}
+
+.who-we-are-p{
+  font-family: 'Inter', sans-serif;  /* Use Inter font */
+    font-weight: 400;                   /* Regular weight */
+    font-style: normal;                 /* CSS uses 'normal' instead of 'Regular' */
+    font-size: 23.48px;                 /* Font size */
+    line-height: 100%;                  /* Line height */
+    letter-spacing: 0%;                 /* Letter spacing */
+    text-align: right;   
+    color:white; 
+}
+
+.text-row{
+   font-family: 'Inter', sans-serif;  /* Inter font */
+    font-weight: 500;                   /* Medium weight */
+    font-style: normal;                 /* CSS doesn’t support 'Medium' in font-style */
+    font-size: 23.48px;                 /* Font size */
+    line-height: 100%;                  /* Line height */
+    letter-spacing: 0%;                 /* Letter spacing */
+    text-align: right;  
+    color:white; 
+    padding-bottom:20px ;
+}
+
+  
