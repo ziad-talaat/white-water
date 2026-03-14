@@ -173,6 +173,8 @@ gap: 10px;
   font-weight: 700;
   color: #00657b;
   margin: 0;
+      font-size: large;
+    font-weight: bold;
 }
 
 .logo-text p {
@@ -202,6 +204,8 @@ gap: 10px;
   font-weight: 600;
   font-size: 15px;
   position: relative;
+      font-size: larger;
+    font-weight: bold;
 }
 
 .nav-links a.active,
@@ -1062,9 +1066,16 @@ height: fit-content;
 }
 
 .row-image{
-  width:313px;
-  height:241px; 
-border-radius: 21px;
+  /* width:313px;
+  height:241px;
+border-radius: 21px; 
+object-fit: cover; */
+width: 100%;            
+    max-width: 400px;       
+    aspect-ratio: 400 / 270; 
+    object-fit: cover;     
+    height: auto;
+    border-radius: 21px; 
 }
 
 
@@ -1073,6 +1084,8 @@ border-radius: 21px;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
+  gap: 30px;
+
 }
 
 .new-service-row-reverse{
@@ -1081,6 +1094,8 @@ border-radius: 21px;
   justify-content: space-between;
   align-items: center;
   padding: 40px;
+  gap: 30px;
+
 }
 
 .new-row-text{
@@ -2035,4 +2050,16 @@ direction: ltr;
   .footer-col-title{
     text-align: center;
   }
+}
+
+
+.icone-styling {
+    font-size: 1.4rem; /* Custom size */
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.icone-styling:hover {
+    transform: translateY(-3px); /* Lifts up slightly on hover */
+    color: #007bff; /* Optional: change to your brand color */
 }
