@@ -244,8 +244,12 @@ padding: 8.34px;
   text-decoration: none;
 }
 .footer-contact-item a:hover{
-   color: #38bdf8;;
+   color: #38bdf8;
 }
       
       
-      
+   
+
+.new-socialPhone a:hover{
+  color: #38bdf8;
+}
