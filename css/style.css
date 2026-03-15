@@ -2063,3 +2063,9 @@ direction: ltr;
     transform: translateY(-3px); /* Lifts up slightly on hover */
     color: #007bff; /* Optional: change to your brand color */
 }
+
+
+.buttons-row a {
+    font-size: large;
+    font-weight: bold;
+}
