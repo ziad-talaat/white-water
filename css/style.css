@@ -89,6 +89,11 @@ height: fit-content;
 }  
 
 
+#small .phone-icon a:hover {
+  color:gray;
+}
+
+
 .description-section p {
     direction: rtl;
       width:fit-content ;
